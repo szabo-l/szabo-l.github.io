@@ -64,4 +64,29 @@ body {
   }
   .text-container {
     display: flex;
-    align-items: flex-start;
+    align-items: flex-start}
+
+    .tanulmanyok {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 5px solid rgb(175, 12, 12);
+        padding: 20px;
+        border-radius: 50px 0 50px 0; 
+        text-align: left;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 25px;
+      }
+      
+      .tanulmanyok .sor {
+        display: flex; /* Flexbox használata */
+        flex-wrap: wrap; /* Engedélyezi a sorokban való elhelyezést */
+        margin-bottom: 10px;
+      }
+      
+      .tanulmanyok .evszam {
+        width: 100%; /* Mobilon teljes szélesség */
+        margin-right: 10px;
+      }
+      
+      .tanulmanyok .iskola {
+        flex: 1; /* A szöveg a fennmaradó helyet foglalja el */
+      }
