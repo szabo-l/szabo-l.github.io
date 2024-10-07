@@ -105,3 +105,24 @@ body {
         font-size: 16px;
         font-weight: bold;
       }
+      .megtekintes p {
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+      }
+      
+      .megtekintes #users {
+        display: flex; /* Flexbox aktiválása */
+        justify-content: space-around; /* Egyenletes elhelyezés */
+        flex-wrap: wrap; /* Engedélyezi a sorokban való elhelyezést */
+      }
+      
+      .megtekintes .user {
+        border: 3px solid rgb(224, 109, 60); 
+        border-radius: 10px; 
+        padding: 10px; 
+        margin: 10px; 
+        text-align: center; 
+        width: 200px; 
+        background-color: rgb(241, 240, 144); 
+      }
