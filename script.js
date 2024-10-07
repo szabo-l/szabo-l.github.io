@@ -397,3 +397,31 @@ if (datumDiv && nevnapDiv)
     nevnapDiv.textContent = "Mai névnap: " + (nameDays[dateString] || "Ma nincs névnap.");
      } else {
     console.error("A datum vagy nevnap elem nem található."); }
+
+    function fetchRandomUsers() {
+        // Kérj le három random felhasználót
+        fetch('https://randomuser.me/api/?results=3')
+            .then(response => response.json())
+            .then(data => {
+                const users = data.results;
+                const usersDiv = document.getElementById('users');
+                usersDiv.innerHTML = ''; // Előző felhasználók törlése
+    
+                users.forEach(user => {
+                    usersDiv.innerHTML += `
+                        <div class="user">
+                            <h4>${user.name.title} ${user.name.first} ${user.name.last}</h4>
+                            <img src="${user.picture.large}" alt="Kép" />
+                        </div>
+                    `;
+                });
+            })
+            .catch(error => {
+                console.error('Hiba történt:', error);
+            });
+    }
+    
+    fetchRandomUsers();
+    setInterval(fetchRandomUsers, 20000);
+
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
