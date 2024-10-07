@@ -200,3 +200,41 @@ body {
       #scrollToTopBtn:hover {
         background-color: #45a049; /* Sötétebb zöld hover állapotban */
       }
+      /* Média lekérdezések a nagyobb képernyőkhöz */
+@media (min-width: 600px) {
+    h1 {
+        font-size: 50px; /* Nagy képernyőkön nagyobb */
+    }
+  
+    h2 {
+        font-size: 30px; /* Nagy képernyőkön nagyobb */
+    }
+    h3 { font-size: 40px;  
+    }
+    h4 {
+      font-size: 20px;
+    }
+    p{
+      font-size: 20px;
+    }
+  
+    .navigacio p {
+        font-size: 20px; /* Nagyobb p betűméret */
+    }
+  
+    .title-container, .navigacio, .bemutatkozas, .tanulmanyok, .referencia, .megtekintes, .erdekessegek, .hasznosoldalak {
+        padding: 30px; /* Nagyobb képernyőkön nagyobb padding */
+    }
+  
+    .tanulmanyok .evszam {
+        width: 120px; /* Nagyobb képernyőkön fix szélesség */
+    }
+  
+    .bemutatkozas .img {
+        width: 300px; /* Nagyobb képernyőkön rögzített szélesség */
+    }
+  }
+  
+  @media (min-width: 900px) {
+    /* Ha bármilyen további stílusváltoztatás nem szükséges, akkor itt hagyd üresen */
+  }
