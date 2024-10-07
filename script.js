@@ -425,3 +425,18 @@ if (datumDiv && nevnapDiv)
     setInterval(fetchRandomUsers, 20000);
 
     const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    // Az ablak görgetési eseménye
+window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopBtn.style.display = "block"; // Gomb megjelenítése
+    } else {
+        scrollToTopBtn.style.display = "none"; // Gomb eltüntetése
+    }
+};
+
+// Gomb kattintás eseménye
+scrollToTopBtn.onclick = function() {
+    document.body.scrollTop = 0; // Safari
+    document.documentElement.scrollTop = 0; // Chrome, Firefox, IE és Opera
+};
