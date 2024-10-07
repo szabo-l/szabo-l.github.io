@@ -37,3 +37,28 @@ body {
     font-size: 16px;
     cursor: pointer;
   }
+
+  .bemutatkozas {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 5px solid rgb(175, 12, 12);
+    padding: 20px;
+    border-radius: 0 50px 0 50px; 
+    text-align: left;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+  }
+  
+  .bemutatkozas h3 {
+    margin: 0 0 10px 0;
+  }
+  
+  .bemutatkozas p, .referencia p, .erdekessegek p, .hasznosoldalak a {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+  }
+  
+  .bemutatkozas .img {
+    width: 100%; /* Reszponzív kép */
+    border: 5px solid whitesmoke;
+  }
