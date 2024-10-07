@@ -184,3 +184,19 @@ body {
         font-size: 20px;
         font-weight: 400;
       }
+      #scrollToTopBtn {
+        position: fixed; 
+        bottom: 20px; 
+        right: 10px; 
+        background-color: #4CAF50; 
+        color: rgba(255, 255, 255, 0.784); 
+        border: none; 
+        padding: 10px; 
+        border-radius: 5px; 
+        cursor: pointer; 
+        display: none; 
+      }
+      
+      #scrollToTopBtn:hover {
+        background-color: #45a049; /* Sötétebb zöld hover állapotban */
+      }
