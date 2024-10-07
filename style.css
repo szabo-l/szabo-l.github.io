@@ -158,3 +158,29 @@ body {
       .hasznosoldalak a:hover {
         text-decoration: underline;
       }
+      h1, h2 {
+        margin: 0;
+      }
+      
+      h1 {
+        font-family: "Protest Guerrilla", sans-serif;
+        font-weight: 500;
+        font-size: 30px; /* Mobilon kisebb */
+      }
+      
+      h2 {
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 24px; /* Mobilon kisebb */
+      }
+      
+      h3 {
+        font-family: "Protest Guerrilla", sans-serif;
+        font-weight: 500;
+        font-size: 24px; /* Mobilon kisebb */
+      }
+      
+      h4 {
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+      }
